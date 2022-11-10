@@ -1,0 +1,36 @@
+@import "normalize.css";
+@import "base.css";
+@import "container.css";
+@import "header.css";
+@import "footer.css";
+@import "section-1.css";
+@import "section-2.css";
+@import "section-3.css";
+@import "section-4.css";
+@import "section-5.css";
+@import "section-6.css";
+@import "modal.css";
+@import "burger.css";
+
+.landing-page {
+    display: flex;
+    width: 100%;
+    padding-top: 80px;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .landing-page {
+        padding-top: 80px;
+}
+}
+@media (max-width: 992px) {
+    .landing-page {
+        padding-top: 72px;
+}
+}
+@media (max-width: 768px) {
+    .landing-page {
+        padding-top: 56px;
+}
+}
