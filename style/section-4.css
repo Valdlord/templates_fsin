@@ -1,0 +1,107 @@
+.section-4 {
+	padding: 120px 0;
+}
+.section-4 .container {
+	display: flex;
+	flex-direction: column;
+}
+.section-4 .container .title {
+	padding-bottom: 60px;
+}
+.section-4 .container .inner {
+	display: flex;
+	flex-direction: row;
+}
+.section-4 .container .inner .advantage-item {
+	width: 280px;
+	height: 300px;
+	border: 1px solid #DDDFE0;
+	border-radius: 4px;
+	padding: 52px 0;
+}
+.section-4 .container .inner .advantage-item:not(:last-child){
+	margin-right: 32px;
+}
+.section-4 .container .inner .advantage-item .img {
+	width: 80px;
+	margin: auto;
+	padding-bottom: 44px;
+}
+.section-4 .container .inner .advantage-item .advantage-item__text {
+	max-width: 222px;
+	text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+   .section-4 {
+		padding: 60px 0;
+}
+	.section-4 .container {
+	
+}
+	.section-4 .container .title {
+		padding-bottom: 40px;
+}
+	.section-4 .container .inner {
+		display: grid;
+	    grid-template-columns: [start] 1fr [col-end] 1fr;
+	    grid-template-rows: 1fr 1fr;
+	    column-gap: 24px;
+	    row-gap: 24px;
+}
+	.section-4 .container .inner .advantage-item {
+		width: 336px;
+		height: 188px;
+}
+	.section-4 .container .inner .advantage-item:not(:last-child){
+		margin-right: 0;
+}
+	.section-4 .container .inner .advantage-item .img {
+		width: 64px;
+		margin: auto;
+		padding-bottom: 20px;
+}
+	.section-4 .container .inner .advantage-item .advantage-item__text {
+		max-width: 278px;
+		text-align: center;
+	    margin: auto;
+}
+}
+@media (max-width: 768px) {
+    .section-4 {
+		padding: 40px 0;
+}
+	.section-4 .container {
+}
+	.section-4 .container .title {
+		padding-bottom: 44px;
+}
+	.section-4 .container .inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		column-gap: 0;
+	    row-gap: 0;
+}
+	.section-4 .container .inner .advantage-item {
+		width: 312px;
+		height: 164px;
+		padding: 24px 0;
+		margin-bottom: 12px;
+}
+	.section-4 .container .inner .advantage-item:not(:last-child){
+}
+	.section-4 .container .inner .advantage-item .img {
+		margin: auto;
+		padding-bottom: 24px 0 16px 0;
+}
+	.section-4 .container .inner .advantage-item .advantage-item__text {
+		max-width: 254px;
+		text-align: center;
+	    margin: auto;
+	    padding-bottom: 24px;
+}
+}

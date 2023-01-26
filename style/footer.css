@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    width: 100%;
+    background: #EEF2F7;
+}
+.footer .container .copyright {
+    display: flex;
+    padding: 43px 0;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .footer {
+}
+    .footer .container .copyright {
+}
+}
+@media (max-width: 768px) {
+    .footer {
+}
+    .footer .container .copyright {
+        display: block;
+        text-align: center;
+}
+}

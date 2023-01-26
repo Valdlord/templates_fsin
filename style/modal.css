@@ -1,0 +1,227 @@
+.modal-wrap {
+    background-color: rgba(93, 93, 93, 0.8);
+    background-size: 100%;
+    z-index: 1400;
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.modal-wrap-active {
+    display: flex;
+}
+
+.modal-wrap .modal {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 616px;
+    height: 420px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 0 10px;
+
+    /*анимация окна*/
+
+    animation-name: modal-anim;
+    animation-duration: 0.5s;
+}
+
+.modal-wrap .modal .load-title {
+    display: block;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 31px;
+    text-align: center;
+    color: #080eaf;
+}
+.modal-wrap .modal .load-desc {
+    color: #3D4B66;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+/*dagger*/
+.cl-btn-2 {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 6px;
+    right: 1px;
+}
+.cl-btn-2 div {
+    cursor: pointer;
+    position: relative;  
+    height: 68px;
+    width: 50px;
+}
+.cl-btn-2 .leftright {
+    height: 2px;
+    width: 33px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #3D4B66;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+.cl-btn-2 .rightleft {
+    height: 2px;
+    width: 33px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #3D4B66;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+.cl-btn-2 div:hover .leftright {
+    transform: rotate(-45deg);
+    background-color: #000;
+}
+.cl-btn-2 div:hover .rightleft {
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+.form-modal-item {
+    border: 1px solid #DDDFE0;
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.button-modal {
+    display: block;
+    width: 142px;
+    height: 44px;
+    border-radius: 3px;
+    background: #1939DE;
+    color:  #ffffff;
+    font-size: 14px;
+    padding: 10px 16px;
+    transition: background 0.3s linear 0s;
+    margin: 0 auto;
+}
+
+.error-field {
+    border: 1px solid red;
+}
+
+span.error {
+    display: none;
+    color: red;
+}
+
+@keyframes modal-anim {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .modal-wrap {
+}
+    .modal-wrap .modal {
+}
+    .modal-wrap .modal img {
+       margin: -20px auto 24px auto;
+       width: 28px;
+       height: 28px;
+}
+    .modal-wrap .modal .load-title {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 8px
+}
+    .modal-wrap .modal .load-desc {
+        font-size: 16px;
+        line-height: 24px;
+}
+/*dagger*/
+.cl-btn-2 {
+}
+.cl-btn-2 div {
+}
+.cl-btn-2 .leftright {
+}
+.cl-btn-2 .rightleft {
+}
+.cl-btn-2 div:hover .leftright {
+}
+.cl-btn-2 div:hover .rightleft {
+}
+}
+@media (max-width: 768px) {
+    .modal-wrap {
+}
+    .modal-wrap .modal {
+        width: 312px;
+        height: 380px;
+        border-radius: 15px;
+}
+    .modal-wrap .modal img {
+}
+    .modal-wrap .modal .load-title {
+}
+    .modal-wrap .modal .load-desc {
+}
+/*dagger*/
+    .cl-btn-2 {
+       display: flex;
+        justify-content: end;
+        position: relative;
+        top: 6px;
+        right: 14px;
+}
+    .cl-btn-2 div {
+        cursor: pointer;
+        position: relative;  
+        height: 68px;
+        width: 19px;
+}
+    .cl-btn-2 .leftright {
+        height: 2px;
+        width: 19px;
+        position: absolute;
+        margin-top: 14px;
+        background-color: #3D4B66;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        transition: all .3s ease-in;
+}
+    .cl-btn-2 .rightleft {
+        height: 2px;
+        width: 19px;
+        position: absolute;
+        margin-top: 14px;
+        background-color: #3D4B66;
+        border-radius: 2px;
+        transform: rotate(-45deg);
+        transition: all .3s ease-in;
+}
+    .cl-btn-2 div:hover .leftright {
+        transform: rotate(-45deg);
+        background-color: #000;
+}
+    .cl-btn-2 div:hover .rightleft {
+        transform: rotate(45deg);
+        background-color: #000;
+}
+}

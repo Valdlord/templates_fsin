@@ -1,0 +1,117 @@
+.section-3 {
+	background: #EEF2F7;
+	padding: 120px 0;
+}
+.section-3 .container {
+	
+}
+.section-3 .container .title {
+	margin-bottom: 16px;
+	line-height: 60px;
+}
+.section-3 .container .title-desc {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 70px
+}
+.section-3 .container .list-wrap {
+	display: grid;
+	grid-template-columns: [start] 1fr [col-end] 1fr;
+	grid-template-rows: [start] minmax(48px, 1fr) [row2] minmax(24px, 1fr) [row3] auto [row-end] auto;
+	grid-auto-flow: column;
+	column-gap: 102px;
+	row-gap: 40px;
+}
+.section-3 .container .list-wrap .list-item {
+	display: grid;
+	grid-template-columns: 39px auto;
+}
+.section-3 .container .list-wrap .list-item .number {
+	font-weight: 500;
+	color: #1939DE;
+}
+.s2 {
+	grid-column: col-end;
+	grid-row-start: start;
+	grid-row-end: row3;
+}
+.block-info {
+	grid-row-start: row-end;
+	grid-column-start: start;
+	padding: 21px 49px;
+	background: #FFFFFF;
+	border-radius: 8px;
+	text-align: center;
+}
+
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 992px) {
+    .section-3 {
+		padding: 60px 0;
+
+}
+	.section-3 .container {
+}
+	.section-3 .container .title {
+		margin-bottom: 16px;
+}
+	.section-3 .container .title-desc {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 36px;
+}
+	.section-3 .container .list-wrap {
+		display: grid;
+		grid-template-columns: [start] 1fr;
+		grid-template-rows: [start] auto [row2] auto [row3] auto [row4] auto [row5] auto [row6] auto [row-end] auto;
+		grid-auto-flow: column;
+		column-gap: 0;
+		row-gap: 24px;
+}
+	.section-3 .container .list-wrap .list-item {
+}
+	.section-3 .container .list-wrap .list-item .number {
+}
+	.s2 {
+		grid-column: start;
+		grid-row-start: row4;
+		grid-row-end: row4;
+}
+	.block-info {
+		padding: 20px 138px;
+		margin-top: 11px;
+}
+}
+@media (max-width: 768px) {
+    .section-3 {
+		padding: 40px 0;
+}
+	.section-3 .container {
+}
+	.section-3 .container .title {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 20px;
+}
+	.section-3 .container .title-desc {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 20px;
+}
+	.section-3 .container .list-wrap {
+		row-gap: 16px;
+}
+	.section-3 .container .list-wrap .list-item {
+}
+	.section-3 .container .list-wrap .list-item .number {
+}
+	.s2 {
+}
+	.block-info {
+		padding: 18px 0;
+		margin-top: 24px;
+}
+}
